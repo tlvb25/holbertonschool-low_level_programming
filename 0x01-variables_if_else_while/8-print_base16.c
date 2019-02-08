@@ -12,6 +12,17 @@
  */
 int main(void)
 {
-	printf("0123456789abcdef\n");
+	char ch;
+	char CH;
+
+	for (ch = '0' ; ch <= '9' ; ch++)
+	{
+		putchar(ch);
+	}
+	for (CH = 'a' ; CH <= 'f' ; CH++)
+	{
+		putchar(CH);
+	}
+	putchar('\n');
 	return (0);
 }
