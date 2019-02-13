@@ -1,0 +1,1 @@
+This project provide excercises for working with functions and nested loops
