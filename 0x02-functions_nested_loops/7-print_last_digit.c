@@ -3,8 +3,7 @@
  * print_last-digit - function that adds 2 integers
  * @r: is one of the integers added together
  *
- *
- * Description: finds last digit
+ * Description: prints the last digit of a number
  * Return: The sum of the 2 integers is returned
  */
 int print_last_digit(int r)
