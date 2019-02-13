@@ -1,11 +1,12 @@
 #include "holberton.h"
 /**
- * print_alphabet_x10 - function that prints the alphabet in lowercase
-(*
-* Description: Longer description of the function)?
-(* section header: Section description)*
-* Return: Description of the returned value
-*/
+ * print_alphabet_x10 - function that adds 2 integers
+ * @void: is one of the integers added together
+ *
+ *
+ * Description: Adds two integers
+ * Return: The sum of the 2 integers is returned
+ */
 
 void print_alphabet_x10(void)
 {
