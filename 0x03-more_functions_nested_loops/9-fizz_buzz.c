@@ -1,11 +1,10 @@
-#include "holberton.h"
 #include <stdio.h>
 /**
- * print_line - function that adds 2 integers
- * @n: is one of the integers added together
+ * main - function that adds 2 integers
+ * @void: is one of the integers added together
  *
  * Description: prints n amount = to the number entered
- * Return: nothing
+ * Return: returns 0
  */
 int main(void)
 {
@@ -28,10 +27,6 @@ int main(void)
 		else
 		{
 			printf("%i ", i);
-		}
-		if (i != 100)
-		{
-			printf(" ");
 		}
 	}
 	printf("\n");
