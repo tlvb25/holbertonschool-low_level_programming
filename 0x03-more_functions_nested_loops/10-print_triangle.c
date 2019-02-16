@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * print_triangle - function that adds 2 integers
- * @size: is one of the integers added together
+ * @size: input variable
  *
  * Description: prints triangles
  * Return: no return
