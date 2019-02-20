@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _strlen - function that adds 2 integers
+ * print_rev - function that adds 2 integers
  * @s: string pointer
  *
  * Description: prints triangles
