@@ -1,5 +1,7 @@
 #ifndef HOLBERTON_HEADER
 #define HOLBERTON_HEADer
+int _strlen(char *s);
+void swap_int(int *a, int *b);
 void reset_to_98(int *n);
 void print_triangle(int size);
 void print_square(int size);
