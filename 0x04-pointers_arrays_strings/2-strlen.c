@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * _strlen - function that adds 2 integers
- * @s: input variable
+ * @s: string pointer
  *
  * Description: prints triangles
  * Return: no return
