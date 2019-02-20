@@ -1,7 +1,8 @@
 #include "holberton.h"
 /**
- * print_triangle - function that adds 2 integers
- * @size: input variable
+ * swap_int - function that adds 2 integers
+ * @a: input pointer
+ * @b: input pointer
  *
  * Description: prints triangles
  * Return: no return
