@@ -11,11 +11,7 @@ char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
 
-	if (dest == src)
-		return (dest);
-	else if (src == 0)
-		return (dest);
-	for (i = 0; i < src[i]; i++)
+	for (i = 0; src[i] != '\0'; i++)
 		dest[i] = src[i];
 	return (dest);
 }
