@@ -3,7 +3,7 @@
  * rev_string - function that adds 2 integers
  * @s: string pointer
  *
- * Description: prints triangles
+ * Description: reverses a string
  * Return: no return
  */
 
@@ -17,6 +17,6 @@ void rev_string(char *s)
 	{
 		tmp = s[i];
 		s[i] = s[count - i];
-		s[count] = tmp;
+		s[count - i] = tmp;
 	}
 }
