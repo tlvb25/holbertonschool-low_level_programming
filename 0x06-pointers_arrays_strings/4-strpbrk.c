@@ -1,5 +1,5 @@
 #include "holberton.h"
-
+#include <stdio.h>
 /**
  * _strpbrk - function encodes a string using rot13
  * @s: the string to encode
@@ -22,5 +22,5 @@ char *_strpbrk(char *s, char *accept)
 		}
 		s++;
 	}
-	return (0);
+	return (NULL);
 }
