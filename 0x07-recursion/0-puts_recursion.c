@@ -1,5 +1,5 @@
 #include "holberton.h"
-#include <stdio.h>
+
 /**
  * _puts_recursion - function encodes a string using rot13
  * @s: the string to encode
