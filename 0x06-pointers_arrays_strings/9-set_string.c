@@ -1,3 +1,4 @@
+#include "holberton.h"
 /**
  * set_string - function encodes a string using rot13
  * @s: input
