@@ -2,10 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * _strlen - function that adds 2 integers
- * @s: string pointer
+ * main - the entry point to the program
+ * @argc: the number of arguments passed to the program
+ * @argv: the array of arguments from argc
  *
- * Description: prints triangles
+ * Description: the print the name of the program
  * Return: no return
  */
 
