@@ -1,0 +1,36 @@
+#include "holberton.h"
+#include <stdlib.h>
+/**
+ * _strcat - function that adds 2 integers
+ * @dest: string that the other string will be added too
+ * @src: string that is copied to the end of the dest string
+ *
+ * Description: prints triangles
+ * Return: no return
+ */
+
+char *str_concat(char *s1, char *s2)
+{
+	char *s;
+	int size;
+
+	if ((*s1 != '\0') && (*s2 != '\0'))
+	{
+		while (*s1 != '\0')
+		{
+			s1++;
+			size++;
+		}
+		while (*s2 != '\0')
+		{
+			*s1++ = *s2++;
+			size++;
+		}
+		*s1 = '\0';
+	}
+	s = malloc(sizeof(char) * (size + 1));
+	if (s)
+		return (s);
+	else
+		return (NULL);
+}
