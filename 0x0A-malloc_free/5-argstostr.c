@@ -8,6 +8,8 @@ char *argstostr(int ac, char **av)
 	int len;
 	char *cat;
 
+	if (ac == 0 || av == '\0')
+		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
 		j = 0;
