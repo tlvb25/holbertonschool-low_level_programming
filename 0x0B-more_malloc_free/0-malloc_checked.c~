@@ -1,0 +1,21 @@
+#include "holberton.h"
+#include <stdlib.h>
+
+/**
+ * malloc_checked - function that adds 2 integers
+ * @b: is one of the integers added together
+ *
+ *
+ * Description: function allocates memory with malloc_check
+ * Return: if malloc fails we use exit(98)
+ */
+
+void *malloc_checked(unsigned int b)
+{
+	int *pointer;
+
+	pointer = malloc_checked(b);
+	if (pointer == NULL)
+		exit(98);
+	return (pointer);
+}
