@@ -1,5 +1,6 @@
 #include "holberton.h"
-
+#include <stdlib.h>
+#include <string.h>
 /**
  * array_range - function that creates an array of integers
  * @min: the minimun soze of the array
