@@ -1,0 +1,72 @@
+#include "holberton.h"
+#include <stdlib.h>
+#include <string.h>
+/**
+ * string_nconcat - the entry point to the program
+ * @s1: the number of arguments passed to the program
+ * @s2: the array of arguments from argc
+ * @n: byte size constraint
+ *
+ * Description: multiplies the numbers entered
+ * Return: no return
+ */
+char *string_nconcat(char *s1, char *s2, unsigned int n)
+{
+unsigned int len1, i;
+unsigned int len2, j;
+char *ptr;
+
+if (s1 == NULL)
+{
+	s1 = "";
+}
+if (s2 == NULL)
+{
+	s2 = "";
+}
+
+len1 = _strlen(s1);
+len2 = _strlen(s2);
+
+if (n > len2)
+	ptr = malloc(sizeof(char) * (len1 + len2) + 1);
+else
+	ptr = malloc(sizeof(char) * (len1 + n) + 1);
+
+if (ptr == 0)
+	return (NULL);
+
+for (i = 0; i < len1; i++)
+	ptr[i] = s1[i];
+
+if (n < len2)
+{
+	for (j = 0; j < n; j++, i++)
+		ptr[i] = s2[j];
+}
+else
+{
+	for (j = 0; j < len2; j++, i++)
+		ptr[i] = s2[j];
+}
+ptr[i] = '\0';
+return (ptr);
+}
+
+/**
+ * _strlen - function that gets the lengt of a string
+ * @str: the string given
+ *
+ * Return: the length of the string
+ */
+
+int _strlen(char *str)
+{
+	int length = 0;
+
+	while (str[length])
+	{
+		length++;
+	}
+	return (length);
+}
