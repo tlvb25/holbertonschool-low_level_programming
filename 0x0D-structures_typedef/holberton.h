@@ -1,5 +1,6 @@
 #ifndef HOLBERTON_HEADER
-#define HOLBERTON_HEADer
+#define HOLBERTON_HEADER
+char *_strdup(char *str);
 int _atoi(char *s);
 char *cap_string(char *);
 char *string_toupper(char *);
