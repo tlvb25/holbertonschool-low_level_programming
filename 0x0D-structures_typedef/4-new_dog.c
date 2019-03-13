@@ -36,6 +36,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 	return (snooby);
 }
 
+/**
+ * _strdup - function that returns a pointer to a newly allocated space
+ * in memory, which contains a copy of the string given as a parameter
+ * @str: the string given
+ *
+ * Return: a pointer to the duplicated string. It returns NULL if
+ * insufficient memory was available.
+ */
 
 char *_strdup(char *str)
 {
