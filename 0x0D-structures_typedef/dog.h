@@ -1,5 +1,10 @@
-#ifndef HOLBERTON
-#define HOLBERTON
+#ifndef DOG_H
+#define DOG_H
+
+#include "holberton.h"
+
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * struct dog - Defines a dog's characteristic's and descriptors
