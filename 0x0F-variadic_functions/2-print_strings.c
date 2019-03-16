@@ -9,18 +9,18 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list ap;
-	int unsigned i;
+	unsigned int i;
 	char *v;
 
 	va_start(ap, n);
 
-	for(i = 0; i < n; i++)
+	for (i = 0; i < n ; i++)
 	{
 		v = va_arg(ap, char*);
 		if (separator)
 		{
 			printf("%s", v);
-			if (i < n -1)
+			if (i < n - 1)
 				printf("%s", separator);
 		}
 		else
