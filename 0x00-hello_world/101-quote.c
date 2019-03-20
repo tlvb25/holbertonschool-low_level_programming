@@ -1,5 +1,11 @@
 #include <unistd.h>
-
+/**
+ * main - Entry point to the program
+ *@void: void
+ *
+ *Description: prints to standard error
+ *Return: 1
+ */
 void main(void)
 {
     char *i;
