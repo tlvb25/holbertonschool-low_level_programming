@@ -14,6 +14,5 @@ void main(void)
 
     write(2, i, 58);
 
-    return(1);
-
+    return (1);
 }
