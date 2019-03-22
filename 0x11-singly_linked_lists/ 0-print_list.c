@@ -1,10 +1,12 @@
 #include "lists.h"
-
+#include <stdlib.h>
 /**
- * print_list -
+ * print_list - print the values of a linked list, and the length of the values
+ * @h: the list to print
  *
- * Return: 
+ * Return: elements, number of elements in a list.
  */
+
 size_t print_list(const list_t *h)
 {
 	const list_t *temp = h;
