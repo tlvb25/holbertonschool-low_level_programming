@@ -1,3 +1,5 @@
+#include "list.h"
+
 section .data
 	msg1    db "Hello, Holberton",10, 0
 
