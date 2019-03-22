@@ -1,9 +1,10 @@
 #include "lists.h"
 
 /**
- * list_len - returns the length
+ * list_len - finds length
+ * @h: the passed string
  *
- * Return: 
+ * Return: returns the length 
  */
 size_t list_len(const list_t *h)
 {
