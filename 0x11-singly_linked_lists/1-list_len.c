@@ -9,9 +9,9 @@
  */
 size_t list_len(const list_t *h)
 {
-	unsigned int i = 0;
+	unsigned int i;
 
-	for (i = 0; h; i++)
+	while (h)
 	{
 		i++;
 		h = h->next;
