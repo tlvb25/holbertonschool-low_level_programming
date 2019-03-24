@@ -1,15 +1,15 @@
 #include "lists.h"
 
 /**
- * print_list - function prints all the elements
- * of a list_t list
- * @h: head of list
+ * list_len - function returns number of elements
+ * in a linked list_t list
+ * @h: head of linked list
  *
- * Return: the number of nodes
+ * Return: number of elements
  */
 size_t list_len(const list_t *h)
 {
-	unsigned int i;
+	int i = 0;
 
 	while (h)
 	{
