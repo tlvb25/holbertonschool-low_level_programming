@@ -1,20 +1,20 @@
 #include "lists.h"
 
 /**
- * list_len - finds length
- * @h: the passed string
+ * print_list - function prints all the elements
+ * of a list_t list
+ * @h: head of list
  *
- * Return: returns the length 
+ * Return: the number of nodes
  */
 size_t list_len(const list_t *h)
 {
-    int elements = 0;
+	unsigned int i = 0;
 
-    if (h == NULL)
-		return (1);
 	while (h)
 	{
-		elements++;
+		i++;
+		h = h->next;
 	}
-	return (elements);
+	return (i);
 }
