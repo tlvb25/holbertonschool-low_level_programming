@@ -19,5 +19,4 @@ int pop_listint(listint_t **head)
 	*head = next_node;
 
 	return (data;
-
 }
