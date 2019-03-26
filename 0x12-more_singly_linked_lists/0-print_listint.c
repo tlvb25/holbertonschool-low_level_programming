@@ -1,5 +1,5 @@
 #include "lists.h"
-#include <stdio.h>
+
 /**
  * print_listint - prints the elements of listint_t
  * @h: the header pointer passed into the function
