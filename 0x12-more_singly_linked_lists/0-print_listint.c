@@ -1,23 +1,20 @@
 #include "lists.h"
 
 /**
- * print_listint -
+ * print_listint - prints the elements of listint_t
  *
- * Return:
+ * Return: number 
  */
 size_t print_listint(const listint_t *h)
 {
-	unsigned int elements = 0;
+	unsigned int i;
 
-	if (h == NULL)
+	for (i = 0; h; i++)
 	{
-		printf("Error\n");
-		return (1);
-	}
-	while (h)
-	{
-		elements++
+	
+		printf("%u", h->n);
 		h = h->next;
+	
 	}
-return (i);
+	return (0);
 }
