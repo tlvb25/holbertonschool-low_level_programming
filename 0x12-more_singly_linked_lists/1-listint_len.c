@@ -8,11 +8,11 @@
  */
 size_t listint_len(const listint_t *h)
 {
-        unsigned int i;
+	unsigned int i;
 
-        while (h)
-        {
-                i++
-        }
+	while (h)
+	{
+		i++
+	}
 return (i);
 }
