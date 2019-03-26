@@ -9,14 +9,16 @@
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
+	/* new node to inserted at end of list */
 	listint_t *new_node;
 
+	/* allocates memory for new_node ptr */
 	new_node = malloc(sizeof(listint_t));
 
-	if (!new_node)
+	/* checks if either the new node and the passed-in head ptr are null */
+	if (!new_node || !head)
 		return (NULL);
-	if (!head)
-		return (NULL);
+
 	/* stores the passed-in integer into the new_node */
 	new_node->n = n;
 
