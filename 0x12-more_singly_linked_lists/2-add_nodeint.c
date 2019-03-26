@@ -17,13 +17,13 @@ listint_t *add_nodeint(listint_t **head, const int n)
 		return (NULL);
 	if (!head)
 		return (NULL);
-	/* Put in the data/integer */
+	/* stores the passed-in integer into the new_node */
 	new_node->n = n;
 
-	/* makes new_node point to the node head pointed too */
+	/* makes new_node point to the same node that head points to */
 	new_node->next = *head;
 
-	/*Move head upward to now point to the new_node */
+	/*set head ptr to now point to the new_node which is now the first node */
 	*head = new_node;
 
 	return (new_node);
