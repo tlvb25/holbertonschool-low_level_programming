@@ -3,6 +3,7 @@
 /**
  * print_listint - prints the elements of listint_t
  * @h: the header pointer passed into the function
+ *
  * Return: number
  */
 size_t print_listint(const listint_t *h)
