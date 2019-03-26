@@ -14,5 +14,5 @@ size_t print_listint(const listint_t *h)
 		printf("%u\n", h->n);
 		h = h->next;
 	}
-	return (0);
+	return (i);
 }
