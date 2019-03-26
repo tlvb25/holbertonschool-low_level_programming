@@ -1,0 +1,7 @@
+/**
+ * _memset - function encodes a string using rot13
+ * @s: input
+ * @b: input
+ * @n: input
+ * Return: updated string
+ */
