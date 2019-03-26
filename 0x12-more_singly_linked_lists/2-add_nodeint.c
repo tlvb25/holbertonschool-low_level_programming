@@ -3,7 +3,8 @@
 /**
  * add_nodeint - function that adds a new node to the begining of list
  * @head: the double pointer to the head node of the list
- *
+ * @n: the integer value passed to the function
+ * 
  * Return: new_node
  */
 listint_t *add_nodeint(listint_t **head, const int n)
