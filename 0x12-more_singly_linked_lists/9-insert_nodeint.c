@@ -1,7 +1,7 @@
 #include "lists.h"
 listint_t *getNode(int n);
 /**
- * insert_nodeint_at_index - function that inserts a new node at a given position.
+ * insert_nodeint_at_index - inserts new node at a given position.
  * @head: the linked list passed into function
  * @n: data passed into the function
  * @idx: desired node position
