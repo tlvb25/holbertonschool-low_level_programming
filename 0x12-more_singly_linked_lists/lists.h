@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <bits/stdc++.h> 
 
 typedef struct listint_s
 {
