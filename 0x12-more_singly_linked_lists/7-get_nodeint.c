@@ -18,10 +18,15 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 
 	while (temp)
 	{
-		if ( count != index)
-			return (NULL);
-		return (temp->n);
-		i++;
+		if (count == index)
+		{
+			return (temp);
+		}
+		/* moves the pointer to next index */
+		count++;
+		/* moves the temp pointer variable to the next node in linked list */
 		temp = temp->next;
 	}
+	/* This only happen if after cycling through while-loop the node at desired position deosn't exist */ 
+	return (NULL);
 }
