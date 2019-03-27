@@ -9,7 +9,7 @@
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	/* This pointer is declare to keep from altering the *header pointer passed to function */
+	/* This pointer keeps from altering original *header pointer */
 	listint_t *temp;
 	/* int variable used to cycle through to desired nth node in list */
 	unsigned int count = 0;
