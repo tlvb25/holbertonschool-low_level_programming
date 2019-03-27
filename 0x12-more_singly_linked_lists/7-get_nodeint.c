@@ -9,20 +9,20 @@
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-        /* This pointer is declare to keep from altering the *header pointer passed to function */
-        listint_t *temp;
-        /* This integer variable is used to count through to the desired index entered as parameter */
-        unsigned int count = 0;
+	/* This pointer is declare to keep from altering the *header pointer passed to function */
+	listint_t *temp;
+	/* This integer variable is used to count through to the desired index entered as parameter */
+	unsigned int count = 0;
 
-        temp = head;
+	temp = head;
 
-        while (temp)
-        {
-                if ( count == index)
-                        return (temp->n);
-                        i++;
-                        temp = temp->next;
-                else
-                        return (NULL);
-        }
+	while (temp)
+	{
+		if ( count == index)
+			return (temp->n);
+			i++;
+			temp = temp->next;
+		else
+			return (NULL);
+	}
 }
