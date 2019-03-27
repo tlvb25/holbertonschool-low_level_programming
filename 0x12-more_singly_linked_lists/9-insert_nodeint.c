@@ -1,52 +1,40 @@
 #include "lists.h"
 listint_t *getNode(int n);
 /**
- * insert_nodeint_at_index -
+ * insert_nodeint_at_index - function that inserts a new node at a given position.
+ * @head: the linked list passed into function
+ * @n: data passed into the function
+ * @idx: desired node position 
  *
- * Return: 
+ * Return: addresss of new_node
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
         listint_t *temp;
-        listint_t *current = *head;
+        listint_t *new_node;
+        
 
-        if (idx < 1 || idx > n + 1)
-                return (NULL);
-        else
-                /* Keep looping until the pos is zero */
-                while (idx--)
+        if (head)
+        {
+                new_node = malloc(sizeof(listint_t));
+                if (!new_mode)
+                        return (NULL);
+                new_node->n = n;
+                new_node->next = NULL;
+
+                if (!idx)
+                        return (NULL);
+                if (idx == 1)
                 {
-                        if (idx == 0)
-                        {
-                                /* adding Node at required postion */
-                                temp = getNode(n);
-
-                                /* Making the new Node to point to */
-                                /* the old Node at the same position */
-                                temp->next = current;
-
-                                /* Changing the pointer of the Node previous */
-                                /* to the old Node to point to the new Node */
-                                current = temp;
-                        }
-                        else
-                                /* Assign double pointer variable to point to the */
-                                /* pointer pointing to the address of next Node */
-                                current = &(current->next);
-                        }
-                        n++;
+                        new_node->next = *head;
+                        head = new_node;
                 }
-                return (current);
-}
-
-// function to create and return a Node 
-listint_t *getNode(int n) 
-{ 
-    // allocating space 
-    listint_t *newNode = newNode = malloc(sizeof(listint_t)); 
-  
-    // inserting the required data 
-    newNode->n = n; 
-    newNode->next = NULL; 
-    return newNode; 
+                temp = *head;
+                for (int i = 0; i < idx - 2; i++)
+                        temp = temp->next;
+                new_node->next = temp->next;
+                temp->next = new_node;
+                return (newNode);
+        }
+        return (NULL);
 } 
