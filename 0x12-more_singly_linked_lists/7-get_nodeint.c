@@ -11,7 +11,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	/* This pointer is declare to keep from altering the *header pointer passed to function */
 	listint_t *temp;
-	/* This integer variable is used to count through to the desired index entered as parameter */
+	/* int variable used to cycle through to desired nth node in list */
 	unsigned int count = 0;
 
 	temp = head;
@@ -27,6 +27,6 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 		/* moves the temp pointer variable to the next node in linked list */
 		temp = temp->next;
 	}
-	/* This only happen if after cycling through while-loop the node at desired position deosn't exist */ 
+	/* only if after cycling through while-loop the node deosn't exist */
 	return (NULL);
 }
