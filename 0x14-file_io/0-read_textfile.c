@@ -10,13 +10,13 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t file2_read;
+	ssize_t file2_read, read_file, written_file;
 
 	if (!filename || !letters)
 		return (0);
 
 /* since size_t letters is unknown I dynamically create space */
-	char *unknown_size = malloc(sizeof(char) * letters);
+	const char *unknown_size = malloc(sizeof(char) * letters);
 
 	if (!unknown_size)
 		return (0);
@@ -28,7 +28,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 /* copying file to be read into integer variable "read_file" */
-	ssize_t read_file = read(file2_read, unknown_size, letters);
+	read_file = read(file2_read, unknown_size, letters);
 
 	if (read_file == -1)
 	{
@@ -38,7 +38,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	close(file2_read);
 
 /* copying read_file to be written into integer variable "written_file" */
-	ssize_t written_file = write(STDOUT_FILENO, unknown_size, read_file);
+	written_file = write(STDOUT_FILENO, unknown_size, read_file);
 
 	if (written_file == -1)
 	{
