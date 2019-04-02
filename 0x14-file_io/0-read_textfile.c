@@ -16,7 +16,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 
 /* since size_t letters is unknown I dynamically create space */
-	const char *unknown_size = malloc(sizeof(char) * letters);
+	char *unknown_size = malloc(sizeof(char) * letters);
 
 	if (!unknown_size)
 		return (0);
