@@ -13,7 +13,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t file2_read, read_file, written_file;
 	char *unknown_size;
 
-	if (!filename || !letters)
+	if (filename == NULL)
 		return (0);
 
 /* since size_t letters is unknown I dynamically create space */
@@ -22,7 +22,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (!unknown_size)
 		return (0);
 /* copying funct-passed-in file into integer variable "file2_read" */
-	file2_read = open(filename, O_RDONLY, 0400);
+	file2_read = open(filename, O_RDONLY);
 	if (file2_read == -1)
 	{
 		free(unknown_size);
@@ -30,7 +30,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 /* copying file to be read into integer variable "read_file" */
 	read_file = read(file2_read, unknown_size, letters);
-
 	if (read_file == -1)
 	{
 		free(unknown_size);
