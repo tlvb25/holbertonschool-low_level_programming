@@ -11,12 +11,13 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t file2_read, read_file, written_file;
+	char *unknown_size;
 
 	if (!filename || !letters)
 		return (0);
 
 /* since size_t letters is unknown I dynamically create space */
-	char *unknown_size = malloc(sizeof(char) * letters);
+	unknown_size = malloc(sizeof(char) * letters);
 
 	if (!unknown_size)
 		return (0);
