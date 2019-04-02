@@ -18,6 +18,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 /* since size_t letters is unknown I dynamically create space */
 
 	char *unknown_size = malloc(sizeof(char) * letters);
+
 	if (!unknown_size)
 		return (0);
 
@@ -29,16 +30,18 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-/* reading the file passed into this function and stored in integer variable file2_read */
+/* reading the file passed t0 function and stored in integer variable file2_read */
 	ssize_t read_file = read(file2_read, unknown_size, letters);
+
 	if (read_file == -1)
 	{
 		free(unknown_size);
 		return (0);
 	}
-	close (file2_read);
+	close(file2_read);
 
-/* writing the file passed into this function and stored in integer variable file2_read */
+/* writing the file passed to function and stored in integer variable file2_read */
+
 	ssize_t written_file = write(STDOUT_FILENO, unknown_size, read_file);
 	if (written_file == -1)
 	{
