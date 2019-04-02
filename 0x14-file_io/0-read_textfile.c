@@ -37,7 +37,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	close(file2_read);
 
-/* writing the file passed to function and stored in integer variable file2_read */
+/* copying read_file to be written into integer variable "written_file" */
 	ssize_t written_file = write(STDOUT_FILENO, unknown_size, read_file);
 
 	if (written_file == -1)
