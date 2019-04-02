@@ -39,7 +39,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 /* writing the file passed to function and stored in integer variable file2_read */
 	ssize_t written_file = write(STDOUT_FILENO, unknown_size, read_file);
-	
+
 	if (written_file == -1)
 	{
 		free(unknown_size);
