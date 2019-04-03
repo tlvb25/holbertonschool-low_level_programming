@@ -1,9 +1,11 @@
 #include "holberton.h"
 
 /**
- * append_text_to_file -
+ * append_text_to_file - function that appends text at the end of a file.
+ * @filename: file to be copied too
+ * @text_content: file that has text to be copied
  *
- * Return: 
+ * Return: 1
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
