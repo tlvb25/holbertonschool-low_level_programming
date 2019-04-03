@@ -13,7 +13,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	int i;
 
 	if (filename == NULL)
-		return (0);
+		return (-1);
 
 /* creating & writing *filename into file descriptor */
 	created_file = open(filename, O_WRONLY | O_APPEND);
