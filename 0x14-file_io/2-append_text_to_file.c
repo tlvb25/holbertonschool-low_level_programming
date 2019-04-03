@@ -8,13 +8,13 @@
 int append_text_to_file(const char *filename, char *text_content)
 {
 	ssize_t copied_file, created_file;
-	int i;
+	int i =0;
 
 	if (filename == NULL)
 		return (0);
 
 /* creating & writing *filename into file descriptor */
-	created_file = open(filename, O_CREAT | O_WRONLY | O_APPEND, 0600);
+	created_file = open(filename, O_WRONLY | O_APPEND);
 	if (created_file == -1)
 		return (-1);
 
