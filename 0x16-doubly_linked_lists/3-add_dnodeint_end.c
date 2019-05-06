@@ -2,7 +2,7 @@
 
 /**
  * add_dnodeint_end - function that inserts new noded at end of list
- * @head; the linked list passed into function
+ * @head: the linked list passed into function
  * @n: data inserted into new node
  *
  * Return: the address of the new node
