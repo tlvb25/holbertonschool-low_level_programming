@@ -1,9 +1,11 @@
 #include "lists.h"
 
 /**
- * add_dnodeint -
- *
- * Return:
+ * add_dnodeint - unction that adds a new node at the beginning of list
+ * @head: the linked list passed to function
+ * @n: the data inserted into node
+ * 
+ * Return: the address of thew node
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
@@ -16,9 +18,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	{
 		return (NULL);
 	}
-	/* put data in newNode */
 	newNode->n = n;
-	/* Make next of new node as head and previous as NULL */
 	newNode->next = NULL;
 	newNode->prev = NULL;
 
