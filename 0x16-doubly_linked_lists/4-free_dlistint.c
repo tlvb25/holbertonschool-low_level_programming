@@ -1,17 +1,19 @@
 #include "lists.h"
 
 /**
- * free_dlistint -
+ * free_dlistint - function that frees a linked list
+ * @head: the linked list passed to function
  *
- * Return: 
+ * Return: none
  */
 void free_dlistint(dlistint_t *head)
 {
-        dlistint_t *current;
+	dlistint_t *current;
 
-        while ((current = head) != NULL)
+	while (current != NULL)
 	{
-		head = head->next;
-		free(current);
+		current = head->next;
+		free(head);
+		head = current;
 	}
 }
