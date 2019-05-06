@@ -3,8 +3,8 @@
 /**
  * get_dnodeint_at_index - function that returns the nth node of linked list
  * @head: the linked list passed into function
- * @index: the index position 
- * 
+ * @index: the index position
+ *
  * Return: date from node at index position
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
