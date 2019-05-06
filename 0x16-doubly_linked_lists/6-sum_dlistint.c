@@ -1,9 +1,10 @@
 #include "lists.h"
 
 /**
- * sum_dlistint -
+ * sum_dlistint - function that returns the sum of all the data in linked list.
+ * @head: the linked list passed into the function
  *
- * Return: 
+ * Return: the sum of data in every node
  */
 int sum_dlistint(dlistint_t *head)
 {
