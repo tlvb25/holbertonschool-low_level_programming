@@ -3,7 +3,6 @@
  * _atoi - function that converts alpha to integer
  * @s: the string passed into function
  *
- *
  * Return: Integer
  */
 
