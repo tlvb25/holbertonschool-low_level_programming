@@ -1,6 +1,7 @@
 /**
- * rot13 - function encodes a string using rot13
+ * _strspn - function encodes a string using rot13
  * @s: the string to encode
+ * @accept: string of words to ommit
  *
  * Return: updated string
  */
