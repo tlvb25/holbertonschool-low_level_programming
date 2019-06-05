@@ -3,7 +3,7 @@
 /**
  * hash_table_set - adds an element to hash table.
  * @ht: is the hash table being modified
- * @key: is the key used as an index (i)
+ * @key: the key to the table
  * @value: value associated with key
  *
  * Return: 1 successful 0 failed
