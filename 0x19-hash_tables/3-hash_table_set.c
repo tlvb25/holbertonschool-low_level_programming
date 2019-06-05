@@ -1,20 +1,25 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_set -
+ * hash_table_set - adds an element to hash table.
+ * @ht: is the hash table being modified
+ * @key: is the key used an index
+ * @value: value associated with key
  *
- * Return:
+ * Return: 1 successful 0 failed
  */
+
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
+	hash_node_t *new = NULL;
+	hash_node_t *current = NULL;
 	unsigned long int index = key_index((unsigned char *)key, ht->size);
-	hash_node_t *new, *current;
 
-	if (key == NULL || ht == NULL)
-	{
-		return 0;
-	}
+	if (!ht || !key)
+		return (0);
+
 	current = ht->array[index];
+	while (current)
 	{
 		if (!strcmp(current->key, key))
 		{
@@ -27,6 +32,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		current = current->next;
 	}
 
+	/* Chaining and handles collusion*/
 	new = malloc(sizeof(hash_table_t));
 	if (!new)
 		return (0);
