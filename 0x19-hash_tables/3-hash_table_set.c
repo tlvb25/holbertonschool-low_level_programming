@@ -2,13 +2,12 @@
 
 /**
  * hash_table_set - adds an element to hash table.
- * @ht: is the hash table being modified
- * @key: the key to the table
+ * @ht: hash table being modified
+ * @key: the key to look for
  * @value: value associated with key
  *
  * Return: 1 successful 0 failed
  */
-
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	hash_node_t *temp = NULL;
