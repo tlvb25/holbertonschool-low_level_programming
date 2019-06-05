@@ -13,10 +13,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	hash_node_t *temp = NULL;
 	hash_node_t *current = NULL;
-	unsigned long int i = key_index((unsigned char *)key, ht->size);
+	unsigned long int i;
 
 	if (ht == NULL || key == NULL)
 		return (0);
+
+	i = key_index((unsigned char *)key, ht->size);
 
 	current = ht->array[i];
 
