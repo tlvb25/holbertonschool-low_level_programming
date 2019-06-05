@@ -3,7 +3,7 @@
 /**
  * hash_table_set - adds an element to hash table.
  * @ht: is the hash table being modified
- * @key: is the key used an index
+ * @key: is the key used as an index (i)
  * @value: value associated with key
  *
  * Return: 1 successful 0 failed
@@ -11,27 +11,50 @@
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	unsigned long int index = key_index((unsigned char *)key, ht->size);
-	hash_node_t *temp, *new;
+	hash_node_t *temp = NULL;
+	hash_node_t *current = NULL;
+	unsigned long int i = key_index((unsigned char *)key, ht->size);
 
-	if (!ht || !key || !*key || !value)
+	if (ht == NULL || key == NULL)
 		return (0);
 
-	temp = ht->array[index];
-	while (temp && strcmp(temp->key, key) != 0)
-		temp = temp->next;
-	if (temp) 
+	current = ht->array[i];
+
+	while (current)
 	{
-		free (temp->value);
-		temp->value = strdup(value);
-		return (1);
+		if (!strcmp(current->key, key))
+		{
+			free(current->value);
+			current->value = strdup(value);
+			if (!current->value)
+				return (0);
+			return (1);
+		}
+		current = current->next;
 	}
-	new = malloc(sizeof(hash_node_t));
-	if (!new)
+
+
+	temp = malloc(sizeof(hash_table_t));
+	if (!temp)
 		return (0);
-	new->key = strdup(key);
-	new->value = strdup(value);
-	new->next = ht->array[index];
-	ht->array[index] = new;
+
+	temp->key = strdup(key);
+
+	if (!temp->key)
+	{
+		free(temp);
+		return (0);
+	}
+
+	temp->value = strdup(value);
+
+	if (!temp->value)
+	{
+		free(temp->key);
+		free(temp);
+		return (0);
+	}
+	temp->next = ht->array[i];
+	ht->array[i] = temp;
 	return (1);
 }
