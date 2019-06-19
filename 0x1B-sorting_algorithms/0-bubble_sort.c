@@ -6,6 +6,8 @@
  * @b: integer b
  * Return: void
  */
+
+/* Bill Huang Was My Partner for this Project, code is Similar */
 void swap(int *a, int *b)
 {
 	int temp;
