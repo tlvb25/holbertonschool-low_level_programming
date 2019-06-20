@@ -1,7 +1,7 @@
 #include "sort.h"
 
 /**
- * swap - swaps two integer numbers
+ * swap - swaps two integers
  * @a: integer a
  * @b: integer b
  * Return: void
@@ -10,20 +10,20 @@
 /* Bill Huang Was My Partner for this Project, code is Similar */
 void swap(int *a, int *b)
 {
-	int temp;
+	int tmp;
 
-	temp = *a;
+	tmp = *a;
 	*a = *b;
-	*b = temp;
+	*b = tmp;
 }
 
 /**
  * partition - partition for quick sort algorithm
- * @array: array need to sort
+ * @array: array to be sorted
  * @size: size
  * @low: low bound index
  * @high: high bound index
- * Return: return pivot index
+ * Return: returns pivot index
  */
 
 /* Bill Huang Was My Partner for this Project, code is Similar */
@@ -57,7 +57,7 @@ size_t partition(int *array, size_t size, size_t low, size_t high)
 }
 
 /**
- * quick_sort_3args - function takes 3 args
+ * quick_sort_3args - function takes 4 args
  * @array: array to be sorted
  * @size: size
  * @low: low bound index
@@ -80,10 +80,10 @@ void quick_sort_3args(int *array, size_t size, size_t low, size_t high)
 }
 
 /**
- * quick_sort - sorts a integer of array using quick sort algorithm
- * @array: a integer of array
+ * quick_sort - sorts array of int's using quick sort 
+ * @array: array of int's
  * @size: size of array
- * Return: void
+ * Return: nothing
  */
 
 /* Bill Huang Was My Partner for this Project, code is Similar */

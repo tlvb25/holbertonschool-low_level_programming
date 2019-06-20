@@ -1,8 +1,8 @@
 #include "sort.h"
 /**
- * count_digit - a function counts how many digits in decimal the number have
+ * count_digit - function counts the number of digits in decimal 
  * @max: the number
- * Return: return number of digit
+ * Return: return number of digits
  */
 
 /* Bill Huang Was My Partner for this Project, code is Similar */
@@ -18,11 +18,11 @@ size_t count_digit(size_t max)
 	return (digit);
 }
 /**
- * radix_sort - a function that use radix sort algorithm
+ * radix_sort - a function that use radix sort 
  * --- use the index of array are serialization to implemente the work ---
- * @array: an array input
- * @size: size of the array
- * Return: void
+ * @array: input array
+ * @size: array size
+ * Return: nothing
  */
 
 /* Bill Huang Was My Partner for this Project, code is Similar */

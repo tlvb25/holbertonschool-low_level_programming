@@ -10,38 +10,38 @@
 /* Bill Huang Was My Partner for this Project, code is Similar */
 void swap(int *a, int *b)
 {
-	int temp;
+	int tmp;
 
-	temp = *a;
+	tmp = *a;
 	*a = *b;
-	*b = temp;
+	*b = tmp;
 }
 
 /**
- * selection_sort - sorts a integer of array using selection sort algorithm
- * @array: a integer of array
- * @size: size of array
- * Return: void
+ * selection_sort - sorts array of ints using selection sort 
+ * @array: arrays of ints
+ * @size: size of the array
+ * Return: nothing
  */
 
 /* Bill Huang Was My Partner for this Project, code is Similar */
 void selection_sort(int *array, size_t size)
 {
-	size_t i, j, min_idx;
+	size_t i, j, min_idex;
 
 	if (size < 2)
 		return;
 	for (i = 0; i < size; i++)
 	{
-		min_idx = i;
+		min_idex = i;
 		for (j = i + 1; j < size; j++)
 		{
-			if (array[min_idx] > array[j])
-				min_idx = j;
+			if (array[min_idex] > array[j])
+				min_idex = j;
 		}
-		if (i != min_idx)
+		if (i != min_idex)
 		{
-			swap(&array[i], &array[min_idx]);
+			swap(&array[i], &array[min_idex]);
 			print_array(array, size);
 		}
 	}

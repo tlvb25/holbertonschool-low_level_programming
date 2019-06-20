@@ -5,33 +5,33 @@
  * @list: head of linked list
  * @node_a: node a
  * @node_b: node b
- * Return: void
+ * Return: nothing
  */
 
 /* Bill Huang Was My Partner for this Project, code is Similar */
 void swap_node(listint_t **list, listint_t **node_a, listint_t **node_b)
 {
-	listint_t *temp_prev, *temp_next;
+	listint_t *tmp_prev, *tmp_next;
 
 
-	temp_prev = (*node_a)->prev;
-	temp_next = (*node_b)->next;
+	tmp_prev = (*node_a)->prev;
+	tmp_next = (*node_b)->next;
 	if ((*node_a)->prev)
-		temp_prev->next = *node_b;
+		tmp_prev->next = *node_b;
 	else
 		*list = *node_b;
 	if ((*node_b)->next)
-		temp_next->prev = *node_a;
+		tmp_next->prev = *node_a;
 	(*node_a)->prev = *node_b;
 	(*node_b)->next = *node_a;
-	(*node_b)->prev = temp_prev;
-	(*node_a)->next = temp_next;
+	(*node_b)->prev = tmp_prev;
+	(*node_a)->next = tmp_next;
 }
 
 /**
- * insertion_sort_list - sorts a integer of array using insertion algorithm
- * @list: a integer of doublely linked list
- * Return: void
+ * insertion_sort_list - function that sorts array of ints using insertion sort
+ * @list: doublely linked list of integers
+ * Return: nothing
  */
 
 /* Bill Huang Was My Partner for this Project, code is Similar */

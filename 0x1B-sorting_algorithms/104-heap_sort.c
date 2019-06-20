@@ -1,8 +1,8 @@
 #include "sort.h"
 
 /**
- * heapify - a function recursively sorting to get root node largest
- * @array: an array
+ * heapify - function recursively sorting to get largest root node 
+ * @array: array
  * @index: index of node
  * @heap_size: size of heap
  * @size: size of the heap size
@@ -11,7 +11,7 @@
 /* Bill Huang Was My Partner for this Project, code is Similar */
 void heapify(int *array, size_t index, size_t heap_size, size_t size)
 {
-	int temp;
+	int tmp;
 	size_t largest, left_index, right_index;
 
 	largest = index;
@@ -23,25 +23,25 @@ void heapify(int *array, size_t index, size_t heap_size, size_t size)
 		largest = right_index;
 	if (largest != index)
 	{
-		temp = array[largest];
+		tmp = array[largest];
 		array[largest] = array[index];
-		array[index] = temp;
+		array[index] = tmp;
 		print_array(array, size);
 		heapify(array, largest, heap_size, size);
 	}
 }
 
 /**
- * heap_sort - sorting use heap sort algorithm
- * @array: an array need to be sort
- * @size: size of the array
- * Return: void
+ * heap_sort - sorting use heap sort 
+ * @array: array to be sorted
+ * @size: array size
+ * Return: nothing
  */
 
 /* Bill Huang Was My Partner for this Project, code is Similar */
 void heap_sort(int *array, size_t size)
 {
-	int temp;
+	int tmp;
 	size_t i;
 
 	for (i = size / 2 - 1; ; i--)
@@ -52,9 +52,9 @@ void heap_sort(int *array, size_t size)
 	}
 	for (i = size - 1; i > 0; i--)
 	{
-		temp = array[0];
+		tmp = array[0];
 		array[0] = array[i];
-		array[i] = temp;
+		array[i] = tmp;
 		print_array(array, size);
 		heapify(array, 0, i, size);
 	}
