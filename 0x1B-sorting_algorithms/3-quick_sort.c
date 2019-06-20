@@ -6,6 +6,8 @@
  * @b: integer b
  * Return: void
  */
+
+/* Bill Huang Was My Partner for this Project, code is Similar */
 void swap(int *a, int *b)
 {
 	int temp;
@@ -23,6 +25,8 @@ void swap(int *a, int *b)
  * @high: high bound index
  * Return: return pivot index
  */
+
+/* Bill Huang Was My Partner for this Project, code is Similar */
 size_t partition(int *array, size_t size, size_t low, size_t high)
 {
 	int pivot;
@@ -60,6 +64,8 @@ size_t partition(int *array, size_t size, size_t low, size_t high)
  * @high: high bound index
  * Return: void
  */
+
+/* Bill Huang Was My Partner for this Project, code is Similar */
 void quick_sort_3args(int *array, size_t size, size_t low, size_t high)
 {
 	size_t p;
@@ -79,6 +85,8 @@ void quick_sort_3args(int *array, size_t size, size_t low, size_t high)
  * @size: size of array
  * Return: void
  */
+
+/* Bill Huang Was My Partner for this Project, code is Similar */
 void quick_sort(int *array, size_t size)
 {
 	if (!array || size < 2)

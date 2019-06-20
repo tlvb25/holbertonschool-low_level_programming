@@ -7,6 +7,8 @@
  * @size: size of the array
  * Return: void
  */
+
+/* Bill Huang Was My Partner for this Project, code is Similar */
 void counting_sort(int *array, size_t size)
 {
 	int *count, *output;

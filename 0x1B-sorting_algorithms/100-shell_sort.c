@@ -6,6 +6,8 @@
  * @b: integer b
  * Return: void
  */
+
+/* Bill Huang Was My Partner for this Project, code is Similar */
 void swap(int *a, int *b)
 {
 	int temp;
@@ -21,6 +23,8 @@ void swap(int *a, int *b)
  * @size: size of array
  * Return: void
  */
+
+/* Bill Huang Was My Partner for this Project, code is Similar */
 void shell_sort(int *array, size_t size)
 {
 	size_t i, j, gap = 1;

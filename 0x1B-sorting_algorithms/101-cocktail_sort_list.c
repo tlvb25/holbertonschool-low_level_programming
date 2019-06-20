@@ -7,6 +7,8 @@
  * @node_b: node b
  * Return: void
  */
+
+/* Bill Huang Was My Partner for this Project, code is Similar */
 void swap_node_prev(listint_t **list, listint_t **node_a, listint_t **node_b)
 {
 	listint_t *temp_prev, *temp_next;
@@ -32,6 +34,8 @@ void swap_node_prev(listint_t **list, listint_t **node_a, listint_t **node_b)
  * @node_b: node b
  * Return: void
  */
+
+/* Bill Huang Was My Partner for this Project, code is Similar */
 void swap_node_next(listint_t **list, listint_t **node_b, listint_t **node_a)
 {
 	listint_t *temp_prev, *temp_next;
@@ -55,6 +59,8 @@ void swap_node_next(listint_t **list, listint_t **node_b, listint_t **node_a)
  * @list: a integer of doublely linked list
  * Return: void
  */
+
+/* Bill Huang Was My Partner for this Project, code is Similar */
 void cocktail_sort_list(listint_t **list)
 {
 	listint_t *node_a, *node_b, *current;
