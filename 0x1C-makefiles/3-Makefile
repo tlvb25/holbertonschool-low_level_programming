@@ -5,7 +5,7 @@ NAME = holberton
 RM = rm -f
 
 all : $(OBJ)
-         -o $(MAIN) $(OBJS)
+        $(CC) $(OBJS) -o $(NAME)
 
 clean:
         $(RM) *~ $(NAME)
