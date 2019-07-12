@@ -2,8 +2,8 @@
 
 /**
  * swap - swaps two integer numbers
- * @a: integer a
- * @b: integer b
+ * @a: integer to be swapped
+ * @b: integer to be swapped
  * Return: void
  */
 
@@ -18,10 +18,10 @@ void swap(int *a, int *b)
 }
 
 /**
- * bubble_sort - sorts a integer of array using bubble sort algorithm
- * @array: a integer of array
+ * bubble_sort - function sorts a integer of array using bubble sort algorithm
+ * @array: array of integers
  * @size: size of array
- * Return: void
+ * Return: nothing
  */
 
 /* Bill Huang Was My Partner for this Project, code is Similar */

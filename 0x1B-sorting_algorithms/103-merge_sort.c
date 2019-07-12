@@ -1,11 +1,11 @@
 #include "sort.h"
 /**
- * print_subArray - Prints an subarray of integers
+ * print_subArray - prints subarray of integers
  *
- * @array: The array to be printed
+ * @array: array to be printed
  * @iBegin: beginning index
  * @iEnd: ending index
- * Return: void
+ * Return: nothing
  */
 
 /* Bill Huang Was My Partner for this Project, code is Similar */
@@ -30,7 +30,7 @@ void print_subArray(const int *array, size_t iBegin, size_t iEnd)
  * @iMiddle: end index of left side array, beginning index of right
  * @iEnd: end index of right side array
  * @B: a merged array
- * Return: void
+ * Return: nothing
  */
 
 /* Bill Huang Was My Partner for this Project, code is Similar */
@@ -87,11 +87,11 @@ void TopDownSplit(int *B, size_t iBegin, size_t iEnd, int *array)
 	TopDownMerge(B, iBegin, iMiddle, iEnd, array);
 }
 /**
- * copyArray - a function to copy an array
- * @A: a source array A
+ * copyArray - a function that copies an array
+ * @A: source array A
  * @size: size of array A
- * @B: a copy array B
- * Return: void
+ * @B: copy array B
+ * Return: nothing
  */
 
 /* Bill Huang Was My Partner for this Project, code is Similar */
@@ -104,10 +104,10 @@ void copyArray(int *A, size_t size, int *B)
 }
 
 /**
- * merge_sort - sorting use top down merge sort algorithm
- * @array: an array need to be sorted
- * @size: size of array
- * Return: void
+ * merge_sort - sorting use top down merge sort
+ * @array: array to be sorted
+ * @size: array size
+ * Return: nothing
  */
 
 /* Bill Huang Was My Partner for this Project, code is Similar */

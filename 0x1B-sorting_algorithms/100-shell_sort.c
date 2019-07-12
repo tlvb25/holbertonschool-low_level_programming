@@ -1,27 +1,27 @@
 #include "sort.h"
 
 /**
- * swap - swaps two integer numbers
- * @a: integer a
- * @b: integer b
- * Return: void
+ * swap - swaps two integers
+ * @a: integer 
+ * @b: integer 
+ * Return: nothing
  */
 
 /* Bill Huang Was My Partner for this Project, code is Similar */
 void swap(int *a, int *b)
 {
-	int temp;
+	int tmp;
 
-	temp = *a;
+	tmp = *a;
 	*a = *b;
-	*b = temp;
+	*b = tmp;
 }
 
 /**
- * shell_sort - sorts a integer of array using shell sort algorithm
- * @array: a integer of array
+ * shell_sort - sorts a array of int's using shell sort 
+ * @array: array of int's
  * @size: size of array
- * Return: void
+ * Return: nothing
  */
 
 /* Bill Huang Was My Partner for this Project, code is Similar */

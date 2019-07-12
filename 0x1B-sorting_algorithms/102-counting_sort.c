@@ -1,11 +1,11 @@
 #include "sort.h"
 
 /**
- * counting_sort - a function that use counting sort algorithm
+ * counting_sort - function that uses counting sort 
  * --- use the index of array are serialization to implemente the work ---
- * @array: an array input
- * @size: size of the array
- * Return: void
+ * @array: array used as input
+ * @size: array size
+ * Return: nothing
  */
 
 /* Bill Huang Was My Partner for this Project, code is Similar */

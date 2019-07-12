@@ -1,11 +1,11 @@
 #include "sort.h"
 
 /**
- * swap_node_prev - swaps two nodes instead swaps two numbers
+ * swap_node_prev - swaps two nodes, not data
  * @list: head of linked list
  * @node_a: node a
  * @node_b: node b
- * Return: void
+ * Return: nothing
  */
 
 /* Bill Huang Was My Partner for this Project, code is Similar */
@@ -28,11 +28,11 @@ void swap_node_prev(listint_t **list, listint_t **node_a, listint_t **node_b)
 }
 
 /**
- * swap_node_next - swaps two nodes instead swaps two numbers
+ * swap_node_next - swaps two nodes, not data
  * @list: head of linked list
- * @node_a: node a
- * @node_b: node b
- * Return: void
+ * @node_a: a node 
+ * @node_b: b node 
+ * Return: nothing
  */
 
 /* Bill Huang Was My Partner for this Project, code is Similar */
@@ -55,9 +55,9 @@ void swap_node_next(listint_t **list, listint_t **node_b, listint_t **node_a)
 }
 
 /**
- * cocktail_sort_list - sorts a integer of array using cocktail sort algorithm
- * @list: a integer of doublely linked list
- * Return: void
+ * cocktail_sort_list - sorts a array of int's using cocktail sort
+ * @list: a doublely linked list of integers
+ * Return: nothing
  */
 
 /* Bill Huang Was My Partner for this Project, code is Similar */
